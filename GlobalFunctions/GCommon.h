@@ -1,3 +1,22 @@
+/*
+* ==========================================================================
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Xin Hu, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  GCommon.h provides some common configuration for fiberprint project.
+*
+*		Version:  2.0
+*		Created:  Oct/20/2015
+*		Updated: Aug/24/2016
+*
+*		Author: Yijiang Huang, Xin Hu, Guoxian Song
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #pragma once
 #include <cmath>
 
@@ -12,7 +31,7 @@
 #define FILENMAX 128
 
 #ifndef VERSION
-#define VERSION "20160427+"
+#define VERSION "20160826+"
 #endif
 
 #ifndef F_PI
@@ -23,12 +42,12 @@
 #define SPT_EPS  0.0000001	// sparse matrix eps
 #endif
 
-#ifndef  GEO_EPS			// geometry eps
+#ifndef  GEO_EPS						// geometry eps
 #define GEO_EPS  0.001
 #endif
 
 #ifndef STIFF_TOL
-#define STIFF_TOL 1.0e-9	// tolerance for stiffness RMS error
+#define STIFF_TOL 1.0e-9			// tolerance for stiffness RMS error
 #endif
 
 #ifndef MCOND_TOL

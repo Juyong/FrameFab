@@ -1,3 +1,32 @@
+/*
+* ==========================================================================
+*
+*		class:	ADMMCut
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:	The GraphCut submodule takes charge of dividing the 
+*				wireframe into several structually-stable sections, scaling the 
+*				problem down, enabling further tool path searching part 
+*				numerically tractable.
+*
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+*
+*		WARNING:  DO NOT insert node and edge after you dualize the graph,
+*		as we append all project b_fixed point at the end of dual face.
+*		Further inserting will cause stiffness matrix and force creation error.
+* ==========================================================================
+*/
+
 #pragma once
 
 #include <omp.h>

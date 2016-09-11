@@ -1,6 +1,23 @@
-// ArcBall.h: interface for the CArcBall class.
-//
-//////////////////////////////////////////////////////////////////////
+/*
+* ==========================================================================
+*
+*		class:	CArcBall
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:	Visualization widget class
+*
+*		Created:  Oct/10/2015
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+*
+* ==========================================================================
+*/
 
 #include <math.h>
 #include <QGLWidget>

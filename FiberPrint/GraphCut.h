@@ -3,18 +3,24 @@
 *
 *		Class:	GraphCut
 *
-* Description:	Cut input model into layers by different means.
+*		This file is part of the implementation of
 *
-*	  Version:  1.1
-*	  Created:  Oct/10/2015
-*     Updated:  Aug/21/2016
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
 *
-*	   Author:  Xin Hu, Yijiang Huang, Guoxian Song
-*	  Company:  GCL@USTC
+*		Description:	Cut input model into layers by different means.
 *
-*	Successor:	ADMMCut - FrameFab ADMM cut
-*				NormalCut - cut layers by sweeping from bottom to top.
-*				NoneCut - no layers
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+*
+*		Successor:	ADMMCut - FrameFab ADMM cut
+*							NormalCut - cut layers by sweeping from bottom to top.
+*							NoneCut - no layers
 * ==========================================================================
 */
 

@@ -307,7 +307,7 @@ void ADMMCut::InitWeight()
 		}
 
 		tmp_range = max(Fji - Fij, 0.0);
-		tmp_weight = exp(-0.5 * tmp_range * tmp_range) * tmp_height;
+		tmp_weight = exp(-0.5 * tmp_range * tmp_range) * tmp_height;		
 		if (tmp_weight > SPT_EPS)
 		{
 			weight_list.push_back(Triplet<double>(orig_v / 2, orig_u / 2, tmp_weight));
@@ -923,7 +923,7 @@ bool ADMMCut::UpdateR(VX &x_prev)
 		update_r_.Stop();
 	}
 
-	if (max_improv < 1 || reweight_round_ > 20)
+	if (max_improv < 0.8 || reweight_round_ > 20)
 	{
 		/* Exit Reweighting */
 		return true;

@@ -1,3 +1,38 @@
+/*
+* ==========================================================================
+*
+*		class:	FFAnalyzer
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  perform the greedy searching algorithm in FrameFab to generate 
+*		a collision-free, structurally-stable path.
+*
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+*		Note:	Backtracking Greedy Approach:
+*				At every decision state, a trail solution is performed,
+*				unvisited current layer edges that are connected to already printed
+*				structure and calculate their adjacency,collision and stiffness weight.
+*
+*				The total printing cost is weighted sum of the three:
+*
+*					Wp_*P + Wa_*A + Wi_*I
+*
+*					P: stabiliy weight
+*					L: collision cost
+*					A: influence weight
+* ==========================================================================
+*/
+
 #pragma once
 #include <cmath>
 #include <cstring>
@@ -31,7 +66,7 @@ public:
 
 private:
 	bool			GenerateSeq(int l, int h, int t);
-	double			GenerateCost(WF_edge *ei, WF_edge *ej);
+	double		GenerateCost(WF_edge *ei, WF_edge *ej);
 
 public:
 	void			PrintOutTimer();

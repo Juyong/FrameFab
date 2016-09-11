@@ -1,3 +1,31 @@
+/*
+* ==========================================================================
+*
+*		class:	ExtruderCone
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Xin Hu, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  This class maintains extruder bounding cone info
+*				   and OpenGL rendering interfaces.
+*
+*		Version:  2.0
+*		Created:  Oct/20/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Guoxian Song, Xin Hu
+*		Company:  GCL@USTC
+*
+*	 Note:     This file uses mathematical part of Geometric Tools Engine,
+*			   a library of source code for computing in the fields of
+*			   mathematics, graphics, image analysis, and physics.
+*			   For more info, please refer to http://www.geometrictools.com/index.html
+* ==========================================================================
+*/
+
 #pragma once
 #include "GlobalFunctions\GCommon.h"
 #include "WireFrame\WireFrame.h"

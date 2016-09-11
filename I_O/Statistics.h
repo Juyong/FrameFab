@@ -1,3 +1,21 @@
+/*
+* ==========================================================================
+*
+*		class:	Statistics
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Xin Hu, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description: Statistic data output
+*
+*		Author:  Yijiang Huang
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #ifndef STATISTICS_H
 #define STATISTICS_H
 

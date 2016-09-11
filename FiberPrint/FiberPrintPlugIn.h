@@ -1,3 +1,26 @@
+/*
+* ==========================================================================
+*
+*		class:	FiberPrintPlugin
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:	This module is a container for several searching and cut computational 
+*		module, which are public slots to renderwidgets.
+*
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #pragma once
 
 #ifndef FIBERPRINTPLUGIN_H

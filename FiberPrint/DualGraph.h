@@ -1,3 +1,24 @@
+/*
+* ==========================================================================
+*
+*		class:	DualGraph
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:	dual graph is the basic data structure used to perform ADMMCut Algorthim
+*
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #pragma once
 #include <iostream>
 #include <Eigen/Core>

@@ -1,3 +1,21 @@
+/*
+* ==========================================================================
+*
+*		class:	Timer
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Xin Hu, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  Timing tool.
+*
+*		Author: Xin Hu
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #pragma once
 
 #ifndef FIBER_PRINT_TIMER_H

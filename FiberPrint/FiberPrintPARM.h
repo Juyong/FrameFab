@@ -1,3 +1,25 @@
+/*
+* ==========================================================================
+*
+*		class:	FiberPrintPARM
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:	FiberPrintPARM takes charge of computation related parameters configuration.
+*
+*		Version:  2.0
+*		Created:  Oct/10/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+* ==========================================================================
+*/
+
 #pragma once
 
 #include "GlobalFunctions\GCommon.h"
@@ -17,9 +39,9 @@ public:
 		double radius = 0.75,
 		double density = 1210 * 1e-12,
 		double g = -9806.3,
-		double youngs_modulus = 3665,
-		double shear_modulus = 1375,
-		double poisson_ratio = 0.333
+		double youngs_modulus = 3457,
+		double shear_modulus = 1294,
+		double poisson_ratio = 0.335
 		);
 
 	~FiberPrintPARM();

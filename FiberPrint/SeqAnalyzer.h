@@ -1,3 +1,29 @@
+/*
+* ==========================================================================
+*
+*		class:	SequenceAnalyzer
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  perform tool path searching algorithm to generate
+*				a collision-free, structurally stable path.
+*
+*		Version:  2.0
+*		Created:  Oct/20/2015
+*		Updated: Aug/24/2016
+*
+*		Author:  Xin Hu, Yijiang Huang, Guoxian Song
+*		Company:  GCL@USTC
+*
+*		Successor:	FFAnalyzer - FrameFab sequence analyzer
+*							BFAnalyzer - Brute Force sequence analyzer
+* ==========================================================================
+*/
+
 #pragma once
 #include <cmath>
 

@@ -1,41 +1,60 @@
+/*
+* ==========================================================================
+*
+*		class:	ExtruderCone
+*
+*		This file is part of the implementation of
+*
+*		<Sustainable Fabrication of Frame Shapes>
+*		Yijiang Huang, Juyong Zhang, Guoxian Song, Zhongyuan Liu, Lei Yu, Ligang Liu
+*		In ACM Transactions on Graphics (Proc. SIGGRAPH Asia 2016)
+*
+*		Description:  this file defines some basic geomerty data structure and operation.
+*
+*		Version:  2.0
+*		Created:  Oct/20/2015
+*
+*		Author:  Guoxian Song
+*		Company:  GCL@USTC
+*
+*	 Note:     This file uses mathematical part of Geometric Tools Engine,
+*			   a library of source code for computing in the fields of
+*			   mathematics, graphics, image analysis, and physics.
+*			   For more info, please refer to http://www.geometrictools.com/index.html
+* ==========================================================================
+*/
+
 #pragma once
-/*INCLUDE FILE*/
+
 #include <cmath>
 #include <iostream>
 #include "GlobalFunctions\GCommon.h"
 #include "WireFrame\WireFrame.h"
 
 using std::cout;
-/*INCLUDE FILE*/
-
-
-//this file is a tool for basic geomerty operation
 
 namespace Geometry
 {
 	//basic geomertical settings
 	// the toleration of error
 
-
-
-	//a very large number
+	/* upper bound */
 	static double inf = 10000000;
 
-	//a very small number
+	/* lower bound */
 	static double ninf = -10000000;
 
-	//Vector class in 3 dimension euclidean space
+	/* Vector class in 3 dimension euclidean space */
 	class Vector3d
 	{
-
 	public:
-
 		Vector3d(double x = 0, double y = 0, double z = 0)
 		{
 			data_[0] = x;
 			data_[1] = y;
 			data_[2] = z;
 		}
+
 		Vector3d(point o)
 		{
 			data_[0] = o.x();
@@ -58,11 +77,11 @@ namespace Geometry
 		double *data(){ return data_; }
 
 	public:
-
 		Vector3d operator+ (Vector3d &b)
 		{
 			return Vector3d(data_[0] + b.data_[0], data_[1] + b.data_[1], data_[2] + b.data_[2]);
 		}
+
 		Vector3d operator- (Vector3d &b)
 		{
 			return Vector3d(data_[0] - b.data_[0], data_[1] - b.data_[1], data_[2] - b.data_[2]);
@@ -86,6 +105,7 @@ namespace Geometry
 		{
 			return sqrt(data_[0] * data_[0] + data_[1] * data_[1] + data_[2] * data_[2]);
 		}
+
 		void normalize()
 		{
 			double length = norm();
@@ -99,11 +119,12 @@ namespace Geometry
 				cout << "error:zero vector cannnot be normalized";
 			}
 		}
+
 	private:
 		double			data_[3];
 	};
 
-	//For Vector3d(dot product)
+	/* For Vector3d(dot product) */
 	static Vector3d cross(Vector3d vec1, Vector3d vec2)
 	{
 		double u[3] = { vec1.getX(), vec1.getY(), vec1.getZ() };
@@ -111,7 +132,7 @@ namespace Geometry
 		return Vector3d(u[1] * v[2] - u[2] * v[1], u[2] * v[0] - u[0] * v[2], u[0] * v[1] - u[1] * v[0]);
 	}
 
-	//For Vector3d(cross product)
+	/* For Vector3d(cross product) */
 	static double dot(Vector3d vec1, Vector3d vec2)
 	{
 		double u[3] = { vec1.getX(), vec1.getY(), vec1.getZ() };
@@ -132,13 +153,12 @@ namespace Geometry
 		return acos(temp);
 	}
 
-
-
-	//For Vector3d
-	//suppose i = (1,0,0), j = (0,1,0),k = (0,0,1),O =(0,0,0)
-	//and point is in the coordinate system E1={O;i,j,k}
-	//and we have another coordinate system E2={O;coord[1],coord[2],coord[3]};
-	//then we can use the point's coordination in E1 to compute the point's coordination in the E2
+	/* For Vector3d
+	* suppose i = (1,0,0), j = (0,1,0),k = (0,0,1),O =(0,0,0)
+	* and point is in the coordinate system E1={O;i,j,k}
+	* and we have another coordinate system E2={O;coord[1],coord[2],coord[3]};
+	* then we can use the point's coordination in E1 to compute the point's coordination in the E2
+	*/
 
 	static void changeCoordinate(Vector3d &point, Vector3d coord[3])
 	{
@@ -167,5 +187,3 @@ namespace Geometry
 		point = point - origin;
 	}
 }
-
-
