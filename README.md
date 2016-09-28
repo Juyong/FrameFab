@@ -41,5 +41,5 @@ Download **Geometric Tools Engine 2.4** from "*http://www.geometrictools.com/Dow
 6. When it is done, you can turn on *Heat* under the *Edge* mode to see the result of *layer-decomposition*.
 
 ## 4. Contact
-The code is written by Xin Hu (hx37118@mail.ustc.edu.cn), Yijiang Huang (yijiangh@mit.edu.cn) and Guoxian Song (sgx2012@mail.ustc.edu.cn). Feel free to contact them if you have any comments.
+The code is written by Xin Hu (hx37118@mail.ustc.edu.cn), Yijiang Huang (yijiangh@mit.edu) and Guoxian Song (sgx2012@mail.ustc.edu.cn). Feel free to contact them if you have any comments.
 
